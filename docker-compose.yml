@@ -19,7 +19,7 @@ services:
     build:
       context: ..
       #dockerfile: ../src/main/resources/Dockerfile
-      dockerfile: ../devops/Frontend
+      dockerfile: ../Frontend
     image: frontend:2.0
     container_name: frontend-container
     ports:
