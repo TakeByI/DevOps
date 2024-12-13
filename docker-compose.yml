@@ -2,9 +2,9 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ..
+      context: ./Backend
       #dockerfile: ../src/main/java/Dockerfile
-      dockerfile: ./Backend/Dockerfile
+      dockerfile: Dockerfile
     image: backend:2.0
     container_name: backend-container
     ports:
@@ -17,9 +17,9 @@ services:
 
   frontend:
     build:
-      context: ..
+      context: ./Frontend
       #dockerfile: ../src/main/resources/Dockerfile
-      dockerfile: ./Frontend/Dockerfile
+      dockerfile: Dockerfile
     image: frontend:2.0
     container_name: frontend-container
     ports:
